@@ -1,0 +1,83 @@
+.CodeMirror {
+    font-size: .8em;
+    height: auto;
+}
+
+.CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+#header_img {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.list-inline {
+	list-style: none;
+	margin-left: -0.5em;
+	margin-right: -0.5em;
+	padding-left: 0;
+}
+
+.list-inline > li {
+	display: inline-block;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+.video-compare-container {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    line-height: 0;
+    overflow: hidden !important;
+}
+
+.videoMerge {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.publication-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.publication-links .link-block{
+    background-color: rgb(51, 49, 49);
+    color: white;
+    border-radius: 15px;
+    width: 80px;
+    height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 10px;
+}
+
+.publication-links .link-block a{
+    color: white;
+}
+
+.bibtexsection {
+    font-family: "Courier",monospace;
+    font-size: 16px;
+    white-space: pre;
+    background-color: #f4f4f4;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}

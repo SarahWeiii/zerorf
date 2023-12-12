@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>NeuManifold</title>
+
+    <meta name="description" content="ZeroRF: Fast Sparse View 360° Reconstruction with Zero Pretraining">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+        <!--FACEBOOK-->
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="682">
+    <meta property="og:image:height" content="682">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sarahweiii.github.io/zerorf"/>
+    <meta property="og:title" content="ZeroRF" />
+    <meta property="og:description" content="Project page for ZeroRF: Fast Sparse View 360° Reconstruction with Zero Pretraining." />
+
+        <!--TWITTER-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ZeroRF" />
+    <meta name="twitter:description" content="Project page for ZeroRF: Fast Sparse View 360° Reconstruction with Zero Pretraining." />
+    <meta name="twitter:image" content="image/png"/>
+
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>0️⃣</text></svg>">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- <link rel="stylesheet" href="./css/bulma.min.css"> -->
+    <link rel="stylesheet" href="./css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/video_comparison.js"></script>
+	
+<!--
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+-->
+	
+	<link rel="stylesheet" href="css/dics.min.css">
+    <script src="scripts/dics.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', domReady);
+        function domReady() {
+            for (const e of document.querySelectorAll(".b-dics")) {
+                new Dics({
+                    container: e,
+                    textPosition: "top"
+                });
+            }
+        }
+    </script>
+	
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>ZeroRF:</b> Fast Sparse View 360° Reconstruction with Zero Pretraining<br>
+                <small>
+                    <div class="is-size-5 publication-authors" style="margin-top: 15px">
+                        <span class="author-block">
+                            <a href="https://rshi.top/">Ruoxi Shi*</a>,</span>
+                        <span class="author-block">
+                          <a href="https://sarahweiii.github.io/">Xinyue Wei*</a>,</span>
+                        <span class="author-block">
+                          <a href="https://galaxeaaa.github.io/">Cheng Wang</a>,</span>
+                        <span class="author-block">
+                          <a href="http://ai.ucsd.edu/~haosu/">Hao Su</a></span>
+                      </div>
+                      
+                    <div class="is-size-5 publication-authors" style="margin-top: 10px">
+                        <span class="author-block">UC San Diego</span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors" style="margin-top: 10px; font-size: smaller;">
+                        <span class="author-block"><sup>*</sup>Equal contribution</span>
+                    </div>
+
+                    
+                </small>
+            </h2>
+        </div>
+
+        <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="http://arxiv.org/abs/2305.17134"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <!-- <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span> -->
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=LS7tOld5iJ8"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <!-- <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span> -->
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <image src="img/teaser.png" style="width:100%;" class="img-responsive center-block" alt="overview"></image>
+                <br>
+                <p class="text-justify">
+                    ZeroRF is able to perform novel view synthesis from few views (6 as shown in the figure) with exceptional quality, while also being fast, obtaining competitive results within 2 minutes and finishing in around 25 minutes at the full $800^2$ resolution. For common resolutions like $256^2$ or $320^2$ in 3D generation applications, ZeroRF reconstructs an object from sparse-view generations in only 30 seconds.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h3>
+                    Abstract
+                </h3>
+                <!-- <image src="img/rays.jpg" class="img-responsive" alt="overview"><br> -->
+                <p class="text-justify">
+                    We present ZeroRF, a novel per-scene optimization method addressing the challenge of sparse view 360° reconstruction in neural field representations. Current breakthroughs like Neural Radiance Fields (NeRF) have demonstrated high-fidelity image synthesis but struggle with sparse input views. Existing methods, such as Generalizable NeRFs and per-scene optimization approaches, face limitations in data dependency, computational cost, and generalization across diverse scenarios.
+                    To overcome these challenges, we propose ZeroRF, whose key idea is to integrate a tailored Deep Image Prior into a factorized NeRF representation. Unlike traditional methods, ZeroRF parametrizes feature grids with a neural network generator, enabling efficient sparse view 360° reconstruction without any pretraining or additional regularization. Extensive experiments showcase ZeroRF's versatility and superiority in terms of both quality and speed, achieving state-of-the-art results on benchmark datasets.
+                    ZeroRF's significance extends to applications in 3D content generation and editing.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h3>
+                    Method
+                </h3>
+                <image src="img/pipeline.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify">
+                    Architecture of ZeroRF. It parametrizes TensoRF-VM tensors with randomly-initialized deep generator networks (Sec. 4.3), with the input to the networks set to a frozen Gaussian noise on start of training. The system performs per-scene optimization using the standard volume rendering procedure with a plain rendering loss.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a style="text-decoration: none">
+                            <!-- <image src="img/chair_ours.png" width="160px"></image> -->
+                            <div class="video-compare-container">
+                                <video class="video" id="mesh1" loop="" autoplay="" muted="" src="video/chair_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
+                            </div>
+                            <canvas height="400" class="videoMerge" id="mesh1Merge" width="400"></canvas>
+                            <h4><strong>Chair</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none">
+                        <!-- <image src="img/drums_ours.png" width="160px"></image> -->
+                            <div class="video-compare-container">
+                                <video class="video" id="mesh2" loop="" autoplay="" muted="" src="video/drums_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
+                            </div>
+                            <canvas height="400" class="videoMerge" id="mesh2Merge" width="400"></canvas>
+                            <h4><strong>Drums</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none">
+                        <!-- <image src="img/ficus_ours.png" width="160px"></image> -->
+                            <div class="video-compare-container">
+                                <video class="video" id="mesh3" loop="" autoplay="" muted="" src="video/ficus_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
+                            </div>
+                            <canvas height="400" class="videoMerge" id="mesh3Merge" width="400"></canvas>
+                            <h4><strong>Ficus</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="viewer/view_synthetic.html?obj=hotdog" style="text-decoration: none">
+                        <!-- <image src="img/hotdog_ours.png" width="160px"></image> -->
+                            <div class="video-compare-container">
+                                <video class="video" id="mesh4" loop="" autoplay="" muted="" src="video/hotdog_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
+                            </div>
+                            <canvas height="400" class="videoMerge" id="mesh4Merge" width="400"></canvas>
+                            <h4><strong>Hotdog</strong></h4>
+                        </a>
+                    </li>
+                        <br>
+                    <li>
+                        <a href="viewer/view_synthetic.html?obj=lego" style="text-decoration: none">
+                        <!-- <image src="img/lego_ours.png" width="160px"></image> -->
+                            <div class="video-compare-container">
+                                <video class="video" id="mesh5" loop="" autoplay="" muted="" src="video/lego_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
+                            </div>
+                            <canvas height="400" class="videoMerge" id="mesh5Merge" width="400"></canvas>
+                            <h4><strong>Lego</strong></h4>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="viewer/view_synthetic.html?obj=materials" style="text-decoration: none">
+                        <!-- <image src="img/materials_ours.png" width="160px"></image> -->
+                            <div class="video-compare-container">
+                                <video class="video" id="mesh6" loop="" autoplay="" muted="" src="video/materials_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
+                            </div>
+                            <canvas height="400" class="videoMerge" id="mesh6Merge" width="400"></canvas>
+                            <h4><strong>Materials</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="viewer/view_synthetic.html?obj=mic" style="text-decoration: none">
+                        <!-- <image src="img/mic_ours.png" width="160px"></image> -->
+                            <div class="video-compare-container">
+                                <video class="video" id="mesh7" loop="" autoplay="" muted="" src="video/mic_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
+                            </div>
+                            <canvas height="400" class="videoMerge" id="mesh7Merge" width="400"></canvas>
+                            <h4><strong>Mic</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="viewer/view_synthetic.html?obj=ship" style="text-decoration: none">
+                        <!-- <image src="img/ship_ours.png" width="160px"></image> -->
+                            <div class="video-compare-container">
+                                <video class="video" id="mesh8" loop="" autoplay="" muted="" src="video/ship_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
+                            </div>
+                            <canvas height="400" class="videoMerge" id="mesh8Merge" width="400"></canvas>
+                            <h4><strong>Ship</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h3>
+                Bibtex
+            </h3>
+            <p class="bibtexsection">
+            xxx
+            </p>
+        </div>
+    </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                The website template was borrowed from <a href="https://bakedsdf.github.io/">Lior Yariv</a>.
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
