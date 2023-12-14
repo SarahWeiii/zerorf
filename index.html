@@ -175,93 +175,43 @@
         </div>
 
         <div class="row">
-            <div class="col-md-10 col-md-offset-1 text-center">
-                <ul class="nav nav-pills nav-justified">
-                    <li>
-                        <a style="text-decoration: none">
-                            <!-- <image src="img/chair_ours.png" width="160px"></image> -->
-                            <div class="video-compare-container">
-                                <video class="video" id="mesh1" loop="" autoplay="" muted="" src="video/chair_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
-                            </div>
-                            <canvas height="400" class="videoMerge" id="mesh1Merge" width="400"></canvas>
-                            <h4><strong>Chair</strong></h4>
-                        </a>
-                    </li>
-                    <li>
-                        <a style="text-decoration: none">
-                        <!-- <image src="img/drums_ours.png" width="160px"></image> -->
-                            <div class="video-compare-container">
-                                <video class="video" id="mesh2" loop="" autoplay="" muted="" src="video/drums_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
-                            </div>
-                            <canvas height="400" class="videoMerge" id="mesh2Merge" width="400"></canvas>
-                            <h4><strong>Drums</strong></h4>
-                        </a>
-                    </li>
-                    <li>
-                        <a style="text-decoration: none">
-                        <!-- <image src="img/ficus_ours.png" width="160px"></image> -->
-                            <div class="video-compare-container">
-                                <video class="video" id="mesh3" loop="" autoplay="" muted="" src="video/ficus_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
-                            </div>
-                            <canvas height="400" class="videoMerge" id="mesh3Merge" width="400"></canvas>
-                            <h4><strong>Ficus</strong></h4>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="viewer/view_synthetic.html?obj=hotdog" style="text-decoration: none">
-                        <!-- <image src="img/hotdog_ours.png" width="160px"></image> -->
-                            <div class="video-compare-container">
-                                <video class="video" id="mesh4" loop="" autoplay="" muted="" src="video/hotdog_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
-                            </div>
-                            <canvas height="400" class="videoMerge" id="mesh4Merge" width="400"></canvas>
-                            <h4><strong>Hotdog</strong></h4>
-                        </a>
-                    </li>
-                        <br>
-                    <li>
-                        <a href="viewer/view_synthetic.html?obj=lego" style="text-decoration: none">
-                        <!-- <image src="img/lego_ours.png" width="160px"></image> -->
-                            <div class="video-compare-container">
-                                <video class="video" id="mesh5" loop="" autoplay="" muted="" src="video/lego_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
-                            </div>
-                            <canvas height="400" class="videoMerge" id="mesh5Merge" width="400"></canvas>
-                            <h4><strong>Lego</strong></h4>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="viewer/view_synthetic.html?obj=materials" style="text-decoration: none">
-                        <!-- <image src="img/materials_ours.png" width="160px"></image> -->
-                            <div class="video-compare-container">
-                                <video class="video" id="mesh6" loop="" autoplay="" muted="" src="video/materials_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
-                            </div>
-                            <canvas height="400" class="videoMerge" id="mesh6Merge" width="400"></canvas>
-                            <h4><strong>Materials</strong></h4>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="viewer/view_synthetic.html?obj=mic" style="text-decoration: none">
-                        <!-- <image src="img/mic_ours.png" width="160px"></image> -->
-                            <div class="video-compare-container">
-                                <video class="video" id="mesh7" loop="" autoplay="" muted="" src="video/mic_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
-                            </div>
-                            <canvas height="400" class="videoMerge" id="mesh7Merge" width="400"></canvas>
-                            <h4><strong>Mic</strong></h4>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="viewer/view_synthetic.html?obj=ship" style="text-decoration: none">
-                        <!-- <image src="img/ship_ours.png" width="160px"></image> -->
-                            <div class="video-compare-container">
-                                <video class="video" id="mesh8" loop="" autoplay="" muted="" src="video/ship_concat.mp4" onplay="resizeAndPlay(this)" style="width:120px"></video>
-                            </div>
-                            <canvas height="400" class="videoMerge" id="mesh8Merge" width="400"></canvas>
-                            <h4><strong>Ship</strong></h4>
-                        </a>
-                    </li>
-                </ul>
+            <div class="col-md-10 col-md-offset-1" id="hotdog-demos">
+                <h3>
+                    6-View Reconstruction
+                </h3>
             </div>
-    </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <video autoplay controls muted loop playsinline width="100%">
+                    <source src="img/nerf-synth.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <video autoplay controls muted loop playsinline width="100%">
+                    <source src="img/oppo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1" id="hotdog-demos">
+                <h3>
+                    Text / Image to 3D
+                </h3>
+                <image src="img/app_inp.png" class="img-responsive" alt="overview"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <video autoplay controls muted loop playsinline width="100%">
+                    <source src="img/app.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
 
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -286,6 +236,7 @@
         </div>
 
 
+    </div>
 
     </div>
 </body>
